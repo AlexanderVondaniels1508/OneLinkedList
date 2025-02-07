@@ -70,7 +70,6 @@ SmartLinkedList/
 ├── README.md                # Описание проекта
 ├── Exceptions.h             # Файл с определением пользовательских исключений
 ├── LinkedList.h             # Заголовочный файл класса OneLinkedList
-├── LinkedList.cpp           # Реализация методов класса OneLinkedList
 └── main.cpp                 # Пример использования списка
 ```
 
@@ -254,7 +253,7 @@ TEST(LinkedListTest, PushAndPop) {
 Если у вас есть вопросы или предложения, свяжитесь со мной:
 
 - Email: ваш-email@example.com
-- GitHub: [@ваш-github](https://github.com/ваш-github)
+- GitHub: [@AlexanderVonDaniels1508](https://github.com/AlexanderVondaniels1508)
 
 ---
 
