@@ -11,7 +11,7 @@ using std::cin;
 using std::endl;
 using std::string;
 
-template <typename T>
+template <class T>
 class Object {
 public:
     T data;
@@ -25,7 +25,7 @@ public:
     std::shared_ptr<Object<T>> get_next(void) const {return next;}
 };
 
-template <typename T>
+template <class T>
 class OneLinkedList {
 public:
     using shared_ptr_obj = std::shared_ptr<Object<T>>;
