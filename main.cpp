@@ -1,8 +1,9 @@
-#include <iostream> // or #include <bits/stdc++.h>
-#include "Exceptions.h"
-#include "LinkedList.h"
+#include <bits/stdc++.h> // or #include <iostream>
 
-int main() {
+#include "Exceptions.h" // exceptions file
+#include "LinkedList.h" // one linked list file
+
+signed int main(void) {
     try {
         // Создание списка
         OneLinkedList<int> list;
@@ -66,6 +67,5 @@ int main() {
         std::cout << e.what() << std::endl;
     }
     
-
-    return 0; // Успешное завершение
+    return 0; 
 }
