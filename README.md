@@ -237,7 +237,8 @@ TEST(LinkedListTest, PushAndPop) {
 
 ## Автор
 
-**Ваше имя**  
+**Александр (Alex)**  
+
 Этот проект создан в качестве демонстрации реализации односвязного списка с использованием современных возможностей C++.
 
 ---
@@ -252,8 +253,9 @@ TEST(LinkedListTest, PushAndPop) {
 
 Если у вас есть вопросы или предложения, свяжитесь со мной:
 
-- Email: ваш-email@example.com
+- Email: priler86@gmail.com
 - GitHub: [@AlexanderVonDaniels1508](https://github.com/AlexanderVondaniels1508)
+- Telegram: @dev_2fa (на связи 24/7)
 
 ---
 
