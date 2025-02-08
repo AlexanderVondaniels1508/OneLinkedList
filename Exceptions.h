@@ -10,41 +10,38 @@ using std::exception;
 class LinkedListIndexError : public std::exception 
 {
 public:
-    explicit LinkedListIndexError(const char* message) : msg(message) 
-    {   }
+    explicit LinkedListIndexError(const char* message) noexcept : msg(message) 
+    { }
+    explicit LinkedListIndexError(const LinkedListIndexError & other) noexcept : msg(other.msg) 
+    { }
     const char* what() const noexcept override {return msg.c_str();}
+    virtual ~LinkedListIndexError () = default;
 protected:
-    std::string msg;
+    string msg;
 };
 
-class LinkedListEmptyError : public std::exception 
+class LinkedListEmptyError : public LinkedListIndexError 
 {
 public:
-    explicit LinkedListEmptyError(const char* message = "List is empty.") : msg(message) 
-    {   }
-    const char* what() const noexcept override {return msg.c_str();}
-protected:
-    std::string msg;
+    explicit LinkedListEmptyError(const char* message = "List is empty.") noexcept : LinkedListIndexError(message) 
+    { }
+    virtual ~LinkedListEmptyError () = default;
 };
 
-class LinkedListNullPointerError : public std::exception 
+class LinkedListNullPointerError : public LinkedListIndexError 
 {
 public:
-    explicit LinkedListNullPointerError(const char* message = "Null pointer encountered.") : msg(message) 
-    {   }
-    const char* what() const noexcept override {return msg.c_str();}
-protected:
-    std::string msg;
+    explicit LinkedListNullPointerError(const char* message = "Null pointer encountered.") noexcept : LinkedListIndexError(message) 
+    { }
+    virtual ~LinkedListNullPointerError() = default;
 };
 
-class LinkedListInvalidOperationError : public std::exception 
+class LinkedListInvalidOperationError : public LinkedListIndexError 
 {
 public:
-    explicit LinkedListInvalidOperationError(const char* message) : msg(message) 
-    {   }
-    const char* what() const noexcept override {return msg.c_str();}
-protected:
-    std::string msg;
+    explicit LinkedListInvalidOperationError(const char* message) noexcept : LinkedListIndexError(message) 
+    { }
+    virtual ~LinkedListInvalidOperationError() = default;
 };
 
 #endif /*EXCEPTIONS_H*/ 
