@@ -1,8 +1,7 @@
 #ifndef EXCEPTIONS_H
 #define EXCEPTIONS_H
 
-#include <exception>
-#include <string>
+#include <bits/stdc++.h>
 
 using std::string;
 using std::exception;
