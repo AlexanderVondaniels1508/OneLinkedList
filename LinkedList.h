@@ -1,9 +1,7 @@
 #ifndef ONE_LINKED_LIST_HPP // the name this file
 #define ONE_LINKED_LIST_HPP
 
-#include <bits/stdc++.h> // or #include <iostream>
-#include <string>
-#include <memory>
+#include <bits/stdc++.h>
 #include "Exceptions.h" /* exception file of this class */
 
 using std::cout;
